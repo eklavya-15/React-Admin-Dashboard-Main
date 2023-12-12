@@ -187,7 +187,7 @@ const Contacts = () => {
   ];
 
   return (
-    <Box m="20px">
+    <Box m="20px" marginLeft="280px">
       <Header
         title="CONTACTS"
         subtitle="List of Contacts for Future Reference"

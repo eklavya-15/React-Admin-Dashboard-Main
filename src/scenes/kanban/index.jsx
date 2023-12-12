@@ -33,7 +33,7 @@ const KanbanBoard = () => {
   ];
 
   return (
-    <Box m="20px">
+    <Box m="20px" marginLeft="280px">
       <Header title="INVOICES" subtitle="List of Invoice Balances" />
       <Box>
         <KanbanComponent id="kanban" dataSource={data} keyField="TaskID">
