@@ -13,12 +13,12 @@ import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 
-const Dashboard = () => {
+const Dashboard = ({isSidebar}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-
+  console.log({isSidebar});
   return (
-    <Box m="20px">
+    <Box m="20px" paddingLeft={isSidebar ? "270px" : "80px"} paddingBottom="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />

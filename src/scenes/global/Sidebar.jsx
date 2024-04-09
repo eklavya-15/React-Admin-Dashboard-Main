@@ -40,7 +40,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
-export default function Sidebar() {
+export default function Sidebar({handleClick}) {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -83,6 +83,7 @@ export default function Sidebar() {
           <MenuItem
             onClick={() => {
               setIsCollapsed(!isCollapsed);
+              handleClick();
             }}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
